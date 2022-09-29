@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://www.treehugger.com/thmb/oRNYzh7WAvmFjLPzPZVwxRPJw_U=/2119x1414/filters:fill(auto,1)/GettyImages-1247807601-14960e5e6ba04ce6b4d8d211b5d74dd4.jpg")
+      no-repeat center center/cover;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+  color: rgb(240, 212, 170);
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(240, 212, 170);
+}
+
+.fa-heart {
+  color: red;
+}
+
+.loveMe {
+  height: 440px;
+  width: 300px;
+  background: url("https://www.treehugger.com/thmb/oRNYzh7WAvmFjLPzPZVwxRPJw_U=/2119x1414/filters:fill(auto,1)/GettyImages-1247807601-14960e5e6ba04ce6b4d8d211b5d74dd4.jpg")
+    no-repeat center center/cover;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 8px;
+  z-index: 4;
+}
+
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
